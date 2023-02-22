@@ -1,0 +1,49 @@
+﻿<Page
+    x:Class="SI_Task4.View.Pages.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:local="clr-namespace:SI_Task4.View.Pages"
+    xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    d:DesignHeight="600"
+    d:DesignWidth="800"
+    mc:Ignorable="d">
+    <Border>
+        <Grid>
+            <Border
+                Width="500"
+                Height="100"
+                Margin="20"
+                HorizontalAlignment="Center"
+                VerticalAlignment="Top"
+                Background="White"
+                CornerRadius="15">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="0.25*" />
+                        <ColumnDefinition Width="1*" />
+                    </Grid.ColumnDefinitions>
+                    <TextBlock
+                        Grid.Column="1"
+                        Style="{StaticResource Text}"
+                        Text="Задание 4" />
+                    <materialDesign:PackIcon
+                        Width="100"
+                        Height="100"
+                        Kind="AcademicCap" />
+                </Grid>
+            </Border>
+            <Border
+                Width="500"
+                Height="100"
+                Background="White"
+                CornerRadius="15">
+                <Grid>
+                    <Image Source="/Images/Task4.png" />
+
+                </Grid>
+            </Border>
+        </Grid>
+    </Border>
+</Page>

@@ -11,11 +11,12 @@
     mc:Ignorable="d">
     <Border>
         <Grid>
+            <Image Source="/Images/BackGround (2).jpg"  Stretch="UniformToFill"/>
             <Border
                 Width="500"
                 Height="100"
-                Margin="20"
-                HorizontalAlignment="Center"
+                Margin="20,49,0,0"
+                HorizontalAlignment="Left"
                 VerticalAlignment="Top"
                 Background="White"
                 CornerRadius="15">
@@ -34,16 +35,51 @@
                         Kind="AcademicCap" />
                 </Grid>
             </Border>
-            <Border
-                Width="500"
-                Height="100"
-                Background="White"
-                CornerRadius="15">
+            <Border Width="250" Height="100" Margin="540,49,10,451" CornerRadius="15" Background="White">
                 <Grid>
-                    <Image Source="/Images/Task4.png" />
-
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="1*"/>
+                        <ColumnDefinition Width="1*"/>
+                    </Grid.ColumnDefinitions>
+                    <TextBlock Text="Значение x:" FontSize="20" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+                    <TextBox x:Name="TBx" Grid.Column="1" FontSize="20" VerticalAlignment="Center" HorizontalAlignment="Center" Width="126"/>
                 </Grid>
             </Border>
+            <Border
+                Width="250"
+                Height="400"
+                Background="Black"
+                CornerRadius="15" 
+                Margin="0,0,10,34"
+                HorizontalAlignment="Right"
+                VerticalAlignment="Bottom">
+                <ScrollViewer>
+                        <StackPanel HorizontalAlignment="Center">
+                        <Button Style="{StaticResource BTNMain}" Content="4" x:Name="BTN4" Click="BTN4_Click"></Button>
+                        <Button Style="{StaticResource BTNMain}" Content="5" x:Name="BTN5" Click="BTN5_Click"></Button>
+                        <Button Style="{StaticResource BTNMain}" Content="6" x:Name="BTN6" Click="BTN6_Click"></Button>
+                        <Button Style="{StaticResource BTNMain}" Content="7" x:Name="BTN7" Click="BTN7_Click"></Button>
+                        <Button Style="{StaticResource BTNMain}" Content="8" x:Name="BTN8" Click="BTN8_Click"></Button>
+                        <Button Style="{StaticResource BTNMain}" Content="9" x:Name="BTN9" Click="BTN9_Click"></Button>
+                        <Button Style="{StaticResource BTNMain}" Content="10" x:Name="BTN10" Click="BTN10_Click"></Button>
+                    </StackPanel>
+                    </ScrollViewer>
+            </Border>
+            <Border Width="500" Height="400" Background="White" HorizontalAlignment="Left" Margin="20,166,0,34" CornerRadius="15">
+                <Grid>
+                    <Image Source="/Images/Task.jpg"
+                           Stretch="Fill"/>
+                </Grid>
+            </Border>
+            <Button Style="{StaticResource BTNMain}"
+                x:Name="CloseBTN"
+                Click="CloseBTN_Click"
+                Width="50"
+                Height="50" 
+                Margin="740,0,10,550"
+                Content="{materialDesign:PackIcon Kind=Close, Size=20}"
+                Effect="{StaticResource MaterialDesignElevationShadow3}"
+                BorderBrush="Transparent"></Button>
         </Grid>
     </Border>
 </Page>

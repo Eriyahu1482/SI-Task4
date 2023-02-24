@@ -9,11 +9,8 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <None Remove="Images\Task4.png" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="View\Pages\TaskPages\" />
+    <None Remove="Images\BackGround %282%29.jpg" />
+    <None Remove="Images\Task.jpg" />
   </ItemGroup>
 
   <ItemGroup>
@@ -22,7 +19,10 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Resource Include="Images\Task4.png">
+    <Resource Include="Images\BackGround (2).jpg">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\Task.jpg">
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </Resource>
   </ItemGroup>

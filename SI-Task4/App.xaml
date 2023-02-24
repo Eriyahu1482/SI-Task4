@@ -13,7 +13,7 @@
                     PrimaryColor="{x:Null}"
                     SecondaryColor="{x:Null}" />
                 <ResourceDictionary Source="pack://application:,,,/MaterialDesignThemes.Wpf;component/Themes/MaterialDesignTheme.Defaults.xaml" />
-                <ResourceDictionary Source="/AppStyle/TextStyle.xaml" />
+                <ResourceDictionary Source="/AppStyle/AllStyle.xaml" />
             </ResourceDictionary.MergedDictionaries>
         </ResourceDictionary>
     </Application.Resources>

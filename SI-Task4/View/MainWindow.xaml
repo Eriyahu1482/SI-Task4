@@ -9,7 +9,9 @@
     Height="600"
     Background="Transparent"
     WindowStyle="None"
-    mc:Ignorable="d">
+    mc:Ignorable="d"
+    WindowStartupLocation="CenterScreen"
+    ResizeMode="NoResize">
     <Grid>
         <Frame x:Name="MainFrame" NavigationUIVisibility="Hidden" />
     </Grid>

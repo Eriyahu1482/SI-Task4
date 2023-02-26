@@ -147,22 +147,166 @@ namespace SI_Task4.View.Pages
 
         private void BTN7_Click(object sender, RoutedEventArgs e)
         {
-
+            try
+            {
+                double x = Convert.ToDouble(TBx.Text);
+                double a = 3.2, b = -0.7, c = 2.2;
+                double A = 10.5, B = -2.5, C = 5.6;
+                double А = 5.4, В = 3, С = 2.6;
+                if (Math.Abs(1 - Math.Pow(x, 2)) == a + c)
+                {
+                    MessageBox.Show($"1)y = {x * Math.Exp(a) + Math.Exp(Math.Abs(b * c))}\n" +
+                        $"2)y = {x * Math.Exp(A) + Math.Exp(Math.Abs(B * C))}\n" +
+                        $"3)y = {x * Math.Exp(А) + Math.Exp(Math.Abs(В * С))}", " задание 7",
+                            MessageBoxButton.OK,
+                            MessageBoxImage.Information);
+                }
+                if (Math.Abs(1 - Math.Pow(x, 2)) > a + c)
+                {
+                    MessageBox.Show($"1)y = {Math.Pow(Math.Sin(a * x), 2) + Math.Cos(b * c)}\n" +
+                        $"2)y = {Math.Pow(Math.Sin(A * x), 2) + Math.Cos(B * C)}\n" +
+                        $"3)y = {Math.Pow(Math.Sin(А * x), 2) + Math.Cos(В * С)}", " задание 7",
+                            MessageBoxButton.OK,
+                            MessageBoxImage.Information);
+                }
+                if (Math.Abs(1 - Math.Pow(x, 2)) < a + c)
+                {
+                    MessageBox.Show($"1)y = {Math.Sqrt(a * Math.Pow(b, 4) + Math.Pow(Math.Sqrt(c * Math.Pow(x, 2)), 5))}\n" +
+                        $"2)y = {Math.Cos(Math.Sqrt(Math.Abs(x + A * B * C)))}\n" +
+                        $"3)y = {Math.Cos(Math.Sqrt(Math.Abs(x + А * В * С)))}", " задание 7",
+                            MessageBoxButton.OK,
+                            MessageBoxImage.Information);
+                }
+            }
+            catch
+            {
+                MessageBox.Show("Ошибка วกดสเา้กดน้เ่", "задание 7",
+                MessageBoxButton.OK,
+                MessageBoxImage.Information);
+            }
         }
 
         private void BTN8_Click(object sender, RoutedEventArgs e)
         {
-
+            try
+            {
+                double x = Convert.ToDouble(TBx.Text);
+                double k = 3.1, m = 5.15, n = -1.15;
+                double K = 0.78, M = -2.4, N = 4.36;
+                double К = 1.1, М = 0.8, Н = 0.41;
+                if (Math.Pow(x, 2) > m + n)
+                {
+                    MessageBox.Show($"1)y = {Math.ILogB(Math.Abs(m * x + n))}\n" +
+                        $"2)y = {Math.ILogB(Math.Abs(M * x + N))}\n" +
+                        $"3)y = {Math.ILogB(Math.Abs(М * x + Н))}", " задание 8",
+                            MessageBoxButton.OK,
+                            MessageBoxImage.Information);
+                }
+                if (Math.Pow(x, 2) == m + n)
+                {
+                    MessageBox.Show($"1)y = {Math.Exp(Math.Cos(Math.Abs(m * x - n)))}\n" +
+                        $"2)y = {Math.Exp(Math.Cos(Math.Abs(M * x - N)))}\n" +
+                        $"3)y = {Math.Exp(Math.Cos(Math.Abs(М * x - Н)))}", " задание 8",
+                            MessageBoxButton.OK,
+                            MessageBoxImage.Information);
+                }
+                if (Math.Pow(x, 2) < m + n)
+                {
+                    MessageBox.Show($"1)y = {Math.Pow(Math.Sqrt(Math.Pow(k, 2) + Math.Pow(Math.Cos(x), 2)), 3)}\n" +
+                        $"2)y = {Math.Pow(Math.Sqrt(Math.Pow(K, 2) + Math.Pow(Math.Cos(x), 2)), 3)}\n" +
+                        $"3)y = {Math.Pow(Math.Sqrt(Math.Pow(k, 2) + Math.Pow(Math.Cos(x), 2)), 3)}", " задание 8",
+                            MessageBoxButton.OK,
+                            MessageBoxImage.Information);
+                }
+            }
+            catch
+            {
+                MessageBox.Show("Ошибка วกดสเา้กดน้เ่", "задание 8",
+                MessageBoxButton.OK,
+                MessageBoxImage.Information);
+            }
         }
 
         private void BTN9_Click(object sender, RoutedEventArgs e)
         {
-
+            try
+            {
+                double x = Convert.ToDouble(TBx.Text);
+                double a = 1.2, b = 7.2, z = Math.Exp(x);
+                double A = -1.5, B = 3.2, Z = Math.Exp(2 * x);
+                double А = 1.7, В = 5.5, З = Math.Exp(3);
+                if (x < Math.Pow(a, 3))
+                {
+                    MessageBox.Show($"1)y = {a * Math.Pow(Math.Sin(x), 2) + b * Math.Cos(z * x + a)}\n" +
+                        $"2)y = {A * Math.Pow(Math.Sin(x), 2) + B * Math.Cos(Z * x + A)}\n" +
+                        $"3)y = {А * Math.Pow(Math.Sin(x), 2) + В * Math.Cos(З * x + А)}", " задание 9",
+                            MessageBoxButton.OK,
+                            MessageBoxImage.Information);
+                }
+                if (Math.Pow(a, 3) <= x && x <= b)
+                {
+                    MessageBox.Show($"1)y = {Math.Pow(a + b * x, 2) - Math.Sin(a + z * x)}\n" +
+                        $"2)y = {Math.Pow(A + B * x, 2) - Math.Sin(A + Z * x)}\n" +
+                        $"3)y = {Math.Pow(А + В * x, 2) - Math.Sin(А + З * x)}", " задание 9",
+                            MessageBoxButton.OK,
+                            MessageBoxImage.Information);
+                }
+                if (x > b)
+                {
+                    MessageBox.Show($"1)y = {Math.Exp(2.5 * a * x) + z * a * b * x}\n" +
+                        $"2)y = {Math.Exp(2.5 * A * x) + Z * A * B * x}\n" +
+                        $"3)y = {Math.Exp(2.5 * А * x) + З * А * В * x}", " задание 9",
+                            MessageBoxButton.OK,
+                            MessageBoxImage.Information);
+                }
+            }
+            catch
+            {
+                MessageBox.Show("Ошибка วกดสเา้กดน้เ่", "задание 9",
+                MessageBoxButton.OK,
+                MessageBoxImage.Information);
+            }
         }
 
         private void BTN10_Click(object sender, RoutedEventArgs e)
         {
-
+            try
+            {
+                double x = Convert.ToDouble(TBx.Text);
+                double a = 0.1, b = 9.8, c = 11.12;
+                double A = 10, B = 10.05, C = 6.2;
+                double А = 100, В = 3.03, С = 7.12;
+                if (Math.Log10(a) < x)
+                {
+                    MessageBox.Show($"1)y = {Math.Pow(Math.Sqrt(Math.Pow(b, 2) + Math.Sqrt(Math.Abs(x + c))), 3)}\n" +
+                        $"2)y = {Math.Pow(Math.Sqrt(Math.Pow(B, 2) + Math.Sqrt(Math.Abs(x + C))), 3)}\n" +
+                        $"3)y = {Math.Pow(Math.Sqrt(Math.Pow(В, 2) + Math.Sqrt(Math.Abs(x + С))), 3)}", " задание 10",
+                            MessageBoxButton.OK,
+                            MessageBoxImage.Information);
+                }
+                if (Math.Log10(a) == x)
+                {
+                    MessageBox.Show($"1)y = {Math.Cos(x - b - c)}\n" +
+                        $"2)y = {Math.Cos(x - B - C)}\n" +
+                        $"3)y = {Math.Cos(x - В - С)}", " задание 10",
+                            MessageBoxButton.OK,
+                            MessageBoxImage.Information);
+                }
+                if (Math.Log10(a) > x)
+                {
+                    MessageBox.Show($"1)y = {Math.Sin(x + a - b)}\n" +
+                        $"2)y = {Math.Sin(x + A - B)}\n" +
+                        $"3)y = {Math.Sin(x + А - В)}", " задание 10",
+                            MessageBoxButton.OK,
+                            MessageBoxImage.Information);
+                }
+            }
+            catch
+            {
+                MessageBox.Show("Ошибка วกดสเา้กดน้เ่", "задание 10",
+                MessageBoxButton.OK,
+                MessageBoxImage.Information);
+            }
         }
 
         private void CloseBTN_Click(object sender, RoutedEventArgs e)
